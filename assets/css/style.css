@@ -47,9 +47,9 @@ body {
   flex: 0 0 25%;
   max-width: 25%;
   text-align: center;
-  position: relative;
-  bottom: -80px;
-  right: 240px;
+  position: absolute;
+  right: 3px;
+  bottom: 10px;
 }
 #header .header-action li {
     display: inline-block;
@@ -74,9 +74,9 @@ body {
     flex: 0 0 75%;
     max-width: 75%;
     text-align: center;
-    position: relative;
-    bottom: -80px;
-    right: 300px;
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
     height: 40px;
 }
 #nav li {
