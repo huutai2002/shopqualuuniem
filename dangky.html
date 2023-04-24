@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/gird.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/dangky.css">
+</head>
+<body>
+   <img src="./img/background/background-van-go-nho_060721795.jpg" alt="" class="background-vango">
+    <div id="main">
+        <div id="header">
+            <div>
+                <a class="logo" href=""><img src="/img/logo.jpg" alt=""></a>
+            </div>
+            <ul id="nav">
+                <li><a href="./trangchu.html">Trang chủ</a></li>
+                <li><a href="./gioithieu.html">Giới thiệu</a></li>
+                <li><a href="./sanpham.html">Sản phẩm</a></li>
+                <li><a href="./quatang.html">Quà tặng</a></li>
+                <li><a href="./chinhsach.html">Chính sách <i class="fas fa-sharp fa-solid fa-caret-down"></i></a>
+                  <ul class="subnav">
+                    <li><a href="./vanchuyen.html">Vận chuyển</a></li>
+                    <li><a href="./thanhtoan.html">Thanh toán</a></li>
+                    <li><a href="./doitra.html">Đổi trả</a></li>
+                    <li><a href="./baomat.html">Bảo mật</a></li>
+                  </ul>
+                </li>
+                <li><a href="./lienhe.html">Liên hệ</a></li>
+            </ul>
+            <div class="header-action">
+                <li><a href="./giohang.html"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="./dangky.html">Đăng ký</a></li>
+                <li><a href="./dangnhap.html">Đăng nhập</a></li>
+            </div>
+            <div class="search-cart">
+                <form action="timkiem.html" onsubmit="return formValidate()" name="regForm" method="get">
+                    <input type="text" placeholder="Nhập nội dung cần tìm..." name="search" id="tim">
+                    <button type="submit" id="gui"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="container">
+            <div class="title-text">
+            </div>
+            <div class="form-container">
+               <div class="slide-controls">
+                  <input type="radio" name="slide" id="login" checked>
+                  <input type="radio" name="slide" id="signup">
+                  <label for="login" class="slide login">Đăng Ký</label>
+                  <div class="slider-tab">Đăng ký</div>
+               </div>
+               <div class="form-inner">
+                  <form action="#" class="signup">
+                     <div class="field">
+                        <input type="text" id="email" name="email" placeholder="Nhập Email" required>
+                     </div>
+                     <div class="field">
+                        <input type="password" id="password" name="password" placeholder="Nhập Mật Khẩu" required>
+                     </div>
+                     <div class="field">
+                        <input type="password" id="password1" name="password1" placeholder="Nhập Lại Mật Khẩu" required>
+                     </div>
+                     <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input type="submit" value=" Đăng Ký" onclick="checkdk()">
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+         <div class="lop_gia_34"></div>
+         <script src="reg.js"></script>
+         <div id="footer">
+            <div class="lop_gia_10"></div>
+            <p>CỬA HÀNG QUÀ LƯU NIỆM ONLINE</p>
+            <p>Cửa Hàng Quà Lưu Niệm xin gửi đến quý khách những món Quà Lưu Niệm dành cho người bạn yêu thương như người yêu, bạn trai, bạn gái, ông, bà, cha mẹ .LH : 0938.71.0938 Phương .</p>
+            <div class="lop_gia_34"></div>
+            <p>© Bản quyền thuộc về CỬA HÀNG QUÀ LƯU NIỆM</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,239 @@
+html{
+    font-family: "Helvetica Now Text", Arial, Helvetica, sans-serif;
+}
+.head_container{
+  background-color: rgba(245, 245, 245, 0.877);
+  height: 50px;
+  display: grid; 
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr; 
+  grid-template-rows: 70px 1fr 1fr; 
+  gap: 0px 0px; 
+}
+.head { grid-area: 1 / 1 / 2 / 6; }
+.logo { 
+  grid-area: 1 / 2 / 2 / 3; 
+  padding-bottom: 15px;
+  height: 70px;
+  width: 200px;
+  }
+.nv { grid-area: 1 / 6 / 1 / 6  ;
+  border: none;
+  padding-top: 15px;}
+.nv a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  
+}
+.nv :hover {
+  color:rgb(190, 190, 190);
+}
+.container {  display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: 1fr 0.3fr 0.3fr 0.3fr;
+    gap: 10px 30px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". header header header header"
+      ". content1 content2 content3 ."
+      ". content4 content5 content6 ."
+      ". contact contact contact .";
+  }
+  .header {  
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 1.5fr;
+    grid-template-rows: 1fr 1.7fr 0.3fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "sidebar sidebar search_bar"
+      ". slider ."
+      ". get-help .";
+    grid-area: header;
+  }
+  .sidebar { 
+    grid-area: sidebar;
+    padding: 0px;
+  }
+  .search_bar { grid-area: search_bar;}
+  .slider { grid-area: slider;}
+  .get-help { 
+    grid-area: get-help;
+    font-size: larger;
+    text-align: center;
+   }
+  .content1 { grid-area: content1; }
+  
+  .content2 { grid-area: content2; }
+  
+  .content3 { grid-area: content3; }
+  
+  .content4 { grid-area: content4; }
+  
+  .content5 { grid-area: content5; }
+  
+  .content6 { grid-area: content6; }
+  .content a {
+    color: black;
+    text-decoration: none;
+  }
+  .contact  {
+    display: grid;
+    grid-area: contact;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: 
+    "title title title"
+    "contact1 contact2 contact3";
+       
+  }
+
+  .title { grid-area: title;}
+  
+  .contact1 { grid-area: contact1; }
+  
+  .contact2 { grid-area: contact2; }
+  
+  .contact3 { grid-area: contact3; }
+#input-search {
+  padding: auto;
+  border-radius: 15px;
+  height: 35px;
+  width: 150px;
+  border: none;
+  background-color: rgb(248, 248, 248);
+
+}
+#input-search:hover {
+  color: rgba(54, 54, 54, 0.925);
+  background-color: rgb(180, 180, 180);
+
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.noidung_dropdown {
+  display: none;
+  position: absolute;
+  background-color: rgb(248, 248, 248);
+  min-width: 160px;
+  z-index: 1;
+}
+.noidung_dropdown a {
+  color: rgba(180, 180, 180, 0.925);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown:hover .noidung_dropdown {
+  
+  display: block;
+
+}
+
+nav a {
+  display: inline-block;
+  color:black; 
+  font-size: 17px;
+  height: 20px;
+  margin: 3px;
+  padding: 2px 4px;
+  line-height: 20px;
+  text-decoration: none;
+  transition: box-shadow .4s, color .3s;
+  border: none;
+ 
+}
+div nav a {
+  text-align: center;
+  font-weight: bold ;
+} 
+.dieuhuong {
+  text-align: center;
+}
+.dieuhuong :hover{
+  border-bottom: solid 2px rgb(0, 0, 0);
+}
+.title h2 {
+  color: grey;
+}
+.contact p {
+  text-align: center;
+
+}
+.img_ct {
+  display: block;
+  margin: auto;
+}
+.footer_ {
+  background-color: black;
+  color: aliceblue;
+  height: 200px;
+  text-align: left;
+  padding: 50px;
+
+}
+.social {
+  color: aliceblue;
+  height: 20px;
+
+}
+.footer_ span a{
+  text-decoration: none;
+  color: rgb(172, 172, 172);
+}
+/*slider*/
+* {
+  box-sizing:border-box;
+  
+}
+.slider h2 {
+  text-align: center;
+}
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+/* Ẩn các slider */
+.mySlides {
+    display: none;
+}
+ 
+/* định dạng các chấm chuyển đổi các slide */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+/* khi được hover, active đổi màu nền */
+.active, .dot:hover {
+  background-color: #717171;
+}
+ 
+/* Thêm hiệu ứng khi chuyển đổi các slide */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+ 
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+ 
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.mySlides img {
+display: grid;
+}

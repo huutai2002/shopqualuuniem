@@ -1,0 +1,410 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Product-sans", Arial, sans-serif;
+}
+#main {
+    width: 1140px;
+    margin: 10px auto;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+}
+body {
+    position: relative;
+    /* display: grid; */
+}
+.background-vango{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -100;
+    background-image: url(/img/background/background-van-go-nho_060721795.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#header {
+  display: flex;
+  width: 1100px;
+  position: relative;
+  margin: 0 auto;
+  height: 130px;
+}
+#header .header-action{
+  flex: 0 0 25%;
+  max-width: 25%;
+  text-align: center;
+  position: relative;
+  bottom: -80px;
+  right: 240px;
+}
+#header .header-action li {
+    display: inline-block;
+    background-color: #FFBC47;
+    border-radius: 5px;
+}
+.header-action li a{
+    color:#000;
+    text-decoration: none;
+    line-height: 40px;
+    padding:0 10px;
+}
+#header .header-action li:hover {
+    background-color: darkgray;
+}
+.logo img {
+    position: relative;
+    top: 0;
+    height: 85px;
+}
+#nav {
+    flex: 0 0 75%;
+    max-width: 75%;
+    text-align: center;
+    position: relative;
+    bottom: -80px;
+    right: 300px;
+    height: 40px;
+}
+#nav li {
+    display:inline-block;
+    background-color: #FFBC47;
+    border-radius: 5px;
+}
+
+#nav li a {
+    color:#000;
+    text-decoration: none;
+    line-height: 40px;
+    padding:0 24px;
+}
+#nav li:hover a{
+  color: #fff;
+}
+#nav li:hover .subnav {
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+#nav li:hover,.subnav li:hover {
+    background-color: darkgray;
+    
+}
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: #ccc;
+}
+
+#header .search-cart{
+  float: right;
+  position:absolute;
+  right: 20px;
+  bottom: 60px;
+}
+.search-cart i{
+  display: inline-block;
+  cursor: pointer;
+  max-width: 30px;
+  color: #fff;
+  background-color:#F7CE68;
+  padding: 4px;
+  font-size: 17px;
+}
+/* .search-cart .fa-shopping-cart{
+  color:#ed4190;
+  position: relative;
+  top: -28px;
+  left: 223px;
+} */
+/* Slider */
+#slider {
+    position: relative;
+    margin: 0 auto;
+    width: 1100px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+.slide:first-child {
+    opacity: 1;
+}
+  
+/* End Slider */
+
+/* Nut chuyen doi */
+.prevBtn, .nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: none;
+    font-size: 30px;
+    color: #000;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  
+  .prevBtn:hover, .nextBtn:hover {
+    opacity: 1;
+  }
+  
+  .prevBtn {
+    left: 20px;
+  }
+  
+  .nextBtn {
+    right: 20px;
+  }
+  
+/* end */
+#content {
+    width: 1100px;
+    font-size: 20px;
+    color:#000;
+    margin: 0 auto;
+}
+
+#footer {
+    color: #ccc;
+    background-color:#333;
+    background-image: url(/img/foot.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 120px;
+    font-size: 14px;
+    border-radius: 10px;
+}
+.footer-td{
+    font-size: 12px;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+.tiltle-h1, .tiltle-h2 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 20px 0;
+    display: inline-block;
+    position: relative;
+    line-height: 16px;
+
+}
+.tiltle-h1{
+    width: 1140px;
+}
+.tiltle-h2{
+    color: #774d06;
+}
+.tiltle-h1:before {
+    content: "";
+    position: absolute;
+    left: 44%;
+    bottom: -16px;
+    height: 3px;
+    width: 100px;
+    background-color: red;
+}
+
+.cart {
+    color:aquamarine;
+    text-align: center;
+}
+.cart-2 {
+    text-align: center;
+}
+.cart > li{
+    display: inline-block;
+    font-size: 20px;
+
+
+}
+.cartt{
+    min-height: 200px;
+}
+.gio_hang {
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+    top:30px;
+    margin: 0 auto;
+    width: 80%;
+    font-size: 18px;
+    color: #000;
+}
+.gio_hang thead *, .body-giohang *{
+    border: 1px solid;
+
+    align-items: center;
+}
+.gio_hang button {
+    position: relative;
+    left: 45%;
+    color: #ffbc47;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    background-color: #333;
+}
+
+.gio_hang button:hover {
+    background-color: #ccc
+}
+.back {
+    text-decoration: none;
+    background-color:#333333;
+    padding: 5px 10px;
+    color: #FFBC47;
+    border-radius: 2px;
+}
+section{
+  display: grid;
+}
+.product{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+.product-item{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.product button{
+    position: relative;
+    right: -20px;
+    width: 80px;
+    height: 30px;
+    background: #333333;
+    color: #ffbc47;
+    border-radius: 5px;
+}
+.lop_gia_10{
+    height: 10px;
+}
+.lop_gia_34{
+    height: 34px;
+}
+/* go top */
+.back_to_top{
+  position: fixed;
+  bottom: 40px;
+  right: 60px;
+  cursor: pointer;
+}
+.back_to_top img:hover{
+  width: 50px;
+  height: 50px;
+}
+.back_to_top img{
+  width: 40px;
+  height: 40px;
+  transition: height 5s width 5s ease-out;
+}
+/* GIOI THIEU */
+#contact {
+    width: 1140px;
+    padding: 15px 20px;
+}
+
+form{
+  float: right;
+}
+.contents {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding: 15px 20px;
+  }
+  
+  .left-content { grid-area: 1 / 1 / 2 / 2;}
+  .mid-content { grid-area: 1 / 2 / 2 / 5; }
+  .right-content { grid-area: 1 / 5 / 2 / 6; }
+.footerr{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 260px;
+    padding: 20px;
+    line-height: 20px;
+    border-top: 1px solid #333;
+    }
+    
+    .footer-left{ grid-area: 1 / 1 / 2 / 2; }
+    .footer-mid { grid-area: 1 / 2 / 2 / 3; }
+    .footer-right { grid-area: 1 / 3 / 2 / 4; }
+.contentss {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;;
+      }
+      
+      .left1-content { grid-area: 1 / 1 / 2 / 2; margin: 0 auto;}
+      .right1-content { grid-area: 1 / 2 / 2 / 5; }
+.table-contact{
+  width: 100%;
+  margin: auto;
+  text-decoration: none;
+}
+.top_icon{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+.title-content{
+  color: red;
+}
+.required{
+  color: red;
+}
+u{
+  color: blue;
+}
+.send{
+  background-color: #333;
+  color: #ffbc47;
+  border: #333;
+  border-radius: 4px;
+}
+.box{
+  background-color: #333;
+  text-align: center;
+  color: #ffbc47;
+  border: #333;
+  border-radius: 4px;
+}
+/* LIEN HE */

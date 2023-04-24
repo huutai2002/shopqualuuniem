@@ -1,0 +1,56 @@
+@media only screen and (max-width: 768px) {
+    #header {
+      display: none;
+    }
+    .product{
+        display: grid;
+        grid-template-columns: auto;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+}
+/* Thiết lập kiểu cho màn hình điện thoại */
+@media only screen and (max-width: 480px) {
+    #header {
+        display: none;
+    }
+    #slider{
+        max-width: 480px;
+    }
+    body,#main {
+        max-width:480px ;
+    }
+    .product{
+        width: auto;
+        display: grid;
+        grid-template-columns: auto;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+    .product-item{
+        width: auto;
+    }
+    .col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+  
+/* Thiết lập kiểu cho màn hình máy tính bảng */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+}
+  
+/* Thiết lập kiểu cho màn hình laptop */
+@media only screen and (min-width: 769px) {
+    
+}
+  

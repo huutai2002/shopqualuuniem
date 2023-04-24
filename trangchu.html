@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- <link rel="stylesheet" href="./assets/css/reponsive.css"> -->
+    
+</head>
+<body>
+    <img src="./img/background/background-van-go-nho_060721795.jpg" alt="" class="background-vango">
+    <div id="main">
+        <div id="header">
+            <!-- <i class="fas fa-solid fa-bars"></i> -->
+            <div>
+                <a class="logo" href=""><img src="/img/logo.jpg" alt=""></a>
+            </div>
+            <ul id="nav">
+                <li><a href="./trangchu.html">Trang chủ</a></li>
+                <li><a href="./gioithieu.html">Giới thiệu</a></li>
+                <li><a href="./sanpham.html">Sản phẩm</a></li>
+                <li><a href="./quatang.html">Quà tặng</a></li>
+                <li><a href="./chinhsach.html">Chính sách <i class="fas fa-sharp fa-solid fa-caret-down"></i></a>
+                  <ul class="subnav">
+                    <li><a href="./vanchuyen.html">Vận chuyển</a></li>
+                    <li><a href="./thanhtoan.html">Thanh toán</a></li>
+                    <li><a href="./doitra.html">Đổi trả</a></li>
+                    <li><a href="./baomat.html">Bảo mật</a></li>
+                  </ul>
+                </li>
+                <li><a href="./lienhe.html">Liên hệ</a></li>
+            </ul>
+            <div class="header-action">
+                <li><a href="./giohang.html"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="./dangky.html">Đăng ký</a></li>
+                <li><a href="./dangnhap.html">Đăng nhập</a></li>
+            </div>
+            <div class="search-cart">
+                <form action="timkiem.html" onsubmit="return formValidate()" name="regForm" method="get">
+                    <input type="text" placeholder="Nhập nội dung cần tìm..." name="search" id="tim">
+                    <button type="submit" id="gui"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <div id="slider">
+              <img src="./img/slider/timthumb.jpg" class="slide">
+              <img src="./img/slider/timthumb (1).jpg" class="slide">
+              <img src="./img/slider/timthumb (2).jpg" class="slide">
+              <img src="./img/slider/timthumb (3).jpg" class="slide">
+              <img src="./img/slider/but-go-khac-ten-qua-tang-thay-co-1-1024x768.jpg" class="slide">
+              <button class="prevBtn">&#10094;</button>
+              <button class="nextBtn">&#10095;</button>
+        </div>
+          
+
+        <div id="content">
+              <div class="tiltle-h1">Cửa hàng quà tặng trực tuyến</div>
+
+               <p>Chúng tôi cung cấp một loạt các sản phẩm đồ lưu niệm phong phú và đa dạng cho các bạn muốn tìm kiếm kỷ niệm đặc biệt trong cuộc sống. Chúng tôi tự hào giới thiệu các sản phẩm chất lượng cao với mức giá phù hợp cho khách hàng.
+               </p>
+               <p>Cảm ơn bạn đã ghé thăm cửa hàng đồ lưu niệm trực tuyến của chúng tôi. Hãy khám phá và tìm kiếm những sản phẩm lưu niệm đặc biệt cho riêng mình.
+               </p>
+               <div class="tiltle-h2">Sản phẩm đang hot</div>    
+               <div class="product-hot">
+                <section class="product">
+                    <section class="product-item ">
+                        <h2>Bút Gỗ Maple Trắng Nắp</h2>
+                        <img src="./img/Sanpham/butgomapeltrangnap.png">
+                        <p>
+                            Bút Gỗ Maple Trắng Nắp - dòng gỗ cao cấp được chế tác 100% từ thiên nhiên, mẫu bút này sẽ là 
+                            một món quà đặc biệt ý nghĩa để bạn có thể gửi những thông điệp tốt 
+                            đẹp nhất đến với người nhận.
+                            <a href="./butgomapletrangnap.html" class="readmore">Xem thêm</a>.
+                            <br>
+                            <b>Giá bán:200.000 vnđ</b>
+                            <br>
+                            <b>Số lượng:</b> <input id="" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">
+                            <b><button onclick="">Đặt hàng</button></b>
+                        </p>
+                       
+                    </section>
+                    <section class="product-item">
+                        <h2>Bút Gỗ Maple Trắng Xoay</h2>
+                        <img src="./img/Sanpham/butgomapeltrangxoay.png">
+                        <p>
+                            Bút Gỗ Maple Trắng Xoay - dòng gỗ cao cấp được chế tác 100% từ thiên nhiên, mẫu bút này sẽ là 
+                            một món quà đặc biệt ý nghĩa để bạn có thể gửi những thông điệp tốt đẹp nhất đến với người nhận.
+                            <a href="./butgomapletrangxoay.html" class="readmore">Xem thêm</a>.
+                            <br>
+        
+                            <b>Giá bán:150,000 vnđ</b>
+                            <br>
+                            <b>Số lượng:</b> <input id="" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">
+                            <b><button onclick="">Đặt hàng</button></b>
+                        </p>
+                    </section>
+                    <section class="product-item">
+                        <h2>Bút Gỗ Sưa Xoay</h2>
+                        <img src="./img/Sanpham/butgosuaxoay.png">
+                        <p>
+                            Bút Gỗ Sưa Xoay - Đây không chỉ là vật phẩm bạn có thể sử dụng thường xuyên trong công việc 
+                            mà nó còn là một món quà tinh tế để bạn dành tặng người thân, bạn bè hay khách hàng đối tác.
+                            <a href="./butgosuaxoay.html" class="readmore">Xem thêm</a>.
+                            <br>
+                            <b>Giá bán:790,000 vnđ</b>
+                            <br>
+                            <b>Số lượng:</b> <input id="" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">
+                            <b><button onclick="">Đặt hàng</button></b>
+                        </p>
+                        
+                    </section>
+                    <section class="product-item">
+                        <h2> Bút Kim Loại BGTY10</h2>
+                        <img src="./img/Sanpham/butkimloaiPGTY10.jfif">
+                        <p>
+                            Bút kim loại BGTY10 được ưa chuộng bởi sự nhỏ gọn, tinh tế. Bên cạnh đó, giá tầm trung cũng 
+                            là ưu điểm giúp Bút kim loại BGTY10 được nhiều khách hàng lựa chọn để làm quà tặng cho thầy cô, 
+                            bạn bè.
+                            <a href="./butkimloaiBGTY10.html" class="readmore">Xem thêm</a>.
+                            <br>
+        
+                            <b>Giá bán:200.000 vnđ</b> 
+                            <br>
+                            <b>Số lượng:</b> <input id="" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">
+                            <b><button onclick="">Đặt hàng</button></b>
+                        </p>
+                       
+                    </section>
+                    <section class="product-item">
+                        <h2>Bút Kim Loại BGTY9</h2>
+                        <img src="./img/Sanpham/butkimloaiBGTY9.jfif">
+                        <p>
+                            Bút Kim Loại BGTY9 là một trong những dòng bút đắt tiền nhất trong nhóm bút kim loại. 
+                            Bút được cấu tạo đơn giản từ đầu đến ngòi bút. Chính sự đơn giản đó đã
+                            tạo nên vẻ tinh tế, cuốn hút
+                            <a href="./butkimloaiBGTY9.html" class="readmore">Xem thêm</a>.
+                            <br>
+                           
+                            <b>Giá bán:330,000 vnđ</b> 
+                            <br>
+                            <b>Số lượng:</b> <input id="" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">
+                            <b><button onclick="">Đặt hàng</button></b>
+                        </p>
+                    </section>
+                    <section class="product-item">
+                        <h2>Bút Kim Loại BGTY8</h2>
+                        <img src="./img/Sanpham/butkimloaiBGTY8.jfif">
+                        <p>
+                            Bút Kim Loại BGTY8 là sản phẩm có giá trung. Nhưng không phải vì thế mà đẳng 
+                            cấp và vẻ đẹp của Bút Kim Loại BGTY8 bị mất đi mà nó luôn mang đến sự thoải mái cho người cầm bút.
+                            <a href="./butkimloaiBGTY8.html" class="readmore">Xem thêm</a>.
+                            <br>
+                            
+                            <b>Giá bán:220,000 vnđ</b>
+                            <br>
+                            <b>Số lượng:</b> <input id="" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">
+                            <b><button onclick="">Đặt hàng</button></b>
+                        </p>
+                    </section>
+                </section>
+               </div>
+               <div class="tiltle-h2">Sản phẩm mới về</div>    
+               <div class="product-hot">
+                <section class="product">
+                    <section class="product-item">
+                        <h2>Combo Hộp Bút Gỗ Tình Yêu BGTY6</h2>
+                        <img src="./img/Sanpham/combobutgoBGTY6.png">
+                        <p>
+                            Combo Hộp Bút Gỗ Tình Yêu BGTY6 + Chất liệu: gỗ Maple Bắc Mỹ + Màu sắc: màu gỗ tự nhiên + 
+                            Thiết kế: hình hộp chữ nhật + Kích thước: 160*45*20mm
+                            <a href="./combohopbutgotinhyeuBGTY6" class="readmore">Xem thêm</a>.
+                            <br>
+                               
+                            <b>Giá bán:230,000 vnđ</b> 
+                            <br>
+                            <b>Số lượng:</b> <input id="" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">
+                            <b><button onclick="">Đặt hàng</button></b>
+                        </p>
+                    </section>
+                    <section class="product-item">
+                        <h2>Combo Hộp Bút Gỗ Tình Yêu BGTY5</h2>
+                        <img src="./img/Sanpham/combobutgoBGTY5.jfif">
+                        <p>
+                            Combo Hộp Bút Gỗ Tình Yêu BGTY5 + Chất liệu: gỗ Maple Bắc Mỹ + Màu sắc: màu nâu đỏ + Kích thước: 160*55*25mm + Thiết kế: gồm lỗ cắm bút + khay name card
+                            <a href="./combohopbutgotinhyeuBGTY5" class="readmore">Xem thêm</a>.
+                            <br>
+                               
+                            <b>Giá bán:330,000 vnđ</b> 
+                            <br>
+                            <b>Số lượng:</b> <input id="" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">
+                            <b><button onclick="">Đặt hàng</button></b>
+        
+                        </p>
+                    </section>
+                    <section class="product-item">
+                        <h2>Móc Khóa Khắc Hình</h2>
+                        <img src="./img/Sanpham/mockhoakhachinh.jfif">
+                        <p>
+                            Thời gian gần đây rất nhiều bạn trẻ tại TpHCM cũng như quý khách hàng trên cả nước quan tâm đến 
+                            dịch vụ khắc chân dung trên bề mặt tấm gỗ và khắc chân dung trên móc khóa gỗ bằng công nghệ khắc
+                            laser cực kỳ tinh xảo và sắc nét
+                            <a href="./mockhoakhachinh" class="readmore">Xem thêm</a>.
+                            <br>
+                            <b>Giá bán:190,000 vnđ</b>
+                            <br>
+                            <b>Số lượng:</b> <input id="" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">  
+                            <b><button onclick="">Đặt hàng</button></b>   
+                        
+                        </p>
+                    </section>
+                    <section class="product-item">
+                        <h2>Đồng Hồ Gỗ Khắc Hình</h2>
+                        <img src="./img/Sanpham/timthumb.jfif">
+                        <p>
+                                    
+                            Đồng hồ để bàn khắc laser là sản phẩm gỗ mỹ nghệ cao cấp được làm thuần túy từ gỗ tự nhiên: gỗ thông và 
+                            gỗ lồng mức nên sản phẩm có màu trắng sáng. Tiếng đồng hồ quả lắc là một âm thanh gần gũi với mỗi gia đình 
+                            người Việt Nam.
+                
+                            <a href="./donghogokhachinh" class="readmore">Xem thêm</a>.
+                            <br>
+                        
+                            <b>Giá bán:500,000 vnđ</b> 
+                            <br>
+                            <b>Số lượng:</b> <input id="" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">  
+                            <b><button onclick="">Đặt hàng</button></b>
+                        </p>           
+                    </section>
+                    <section class="product-item">
+                        <h2>Hộp Name Card Gỗ</h2>
+                        <img src="./img/Sanpham/hopnamecardgo.jfif">
+                        <p>
+                        Chúng tôi chuyên thiết kế, gia công tất cả các loại hộp name card gỗ đáp ứng theo nhu cầu 
+                        của quý khách hàng. Vì là đơn vị trực tiếp sản xuất các sản phẩm hộp name card gỗ nên chúng 
+                        tôi sẽ mang đến cho bạn giá cả tốt nhất
+                        <a href="./hopnamecardgo" class="readmore">Xem thêm</a>.
+                         <br>       
+                        <b>Giá bán:150,000 vnđ </b>
+                        <br>
+                        <b>Số lượng:</b> <input id="" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">
+                        <b><button onclick="">Đặt hàng</button></b>
+                        </p>
+                    </section>
+                    <section class="product-item">
+                        <h2>Tranh Gỗ Khắc Chân Dung</h2>
+                        <img src="./img/Sanpham/tranhkhacgochandung.png">
+                        <p> 
+                            Một bức tranh gia đình khắc ảnh lên gỗ, thật khó để tưởng tượng phải không. Chúng ta đã 
+                            quá quen với những bức ảnh mang đậm tính chất công nghiệp, nhưng với những hình ảnh được 
+                            khắc trực tiếp lên gỗ thịt thì lại khác
+                            <a href="./tranhkhacgochandung" class="readmore">Xem thêm</a>.
+                            <br>
+                            <b>Giá bán:500,000 vnđ</b>
+                            <br>
+                           <b> Số lượng:</b> <input id="" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">
+                           <b><button onclick="">Đặt hàng</button></b>
+                        </p>
+                    </section>
+                </section>
+               </div>        
+        </div>
+
+        <div id="footer">
+            <div class="lop_gia_10"></div>
+            <p>CỬA HÀNG QUÀ LƯU NIỆM ONLINE</p>
+            <p>Cửa Hàng Quà Lưu Niệm xin gửi đến quý khách những món Quà Lưu Niệm dành cho người bạn yêu thương như người yêu, bạn trai, bạn gái, ông, bà, cha mẹ .LH : 0938.71.0938 Phương .</p>
+            <div class="lop_gia_34"></div>
+            <p>© Bản quyền thuộc về CỬA HÀNG QUÀ LƯU NIỆM</p>
+        </div>
+        <script src="./main.js"></script>
+    </div>
+</body>
+</html>
