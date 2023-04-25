@@ -59,10 +59,11 @@ function checkdn() {
       alert('Password không hợp lệ.');
       return false; 
   }
-  else
+  else{
       alert('OK. Đăng nhập thành công.'); 
       window.open("/shopqualuuniem/trangchu.html");
       window.open("/shopqualuuniem/dangnhap.html");
+  }
 
 } 
 
