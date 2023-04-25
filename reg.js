@@ -61,7 +61,9 @@ function checkdn() {
   }
   else
       alert('OK. Đăng nhập thành công.'); 
-      window.open("/trangchu.html")
+      window.open("/shopqualuuniem/trangchu.html");
+      window.open("/shopqualuuniem/dangnhap.html");
+
 } 
 
 
