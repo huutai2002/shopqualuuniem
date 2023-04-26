@@ -22,7 +22,6 @@
               <li><a href="./trangchu.html">Trang chủ</a></li>
               <li><a href="./gioithieu.html">Giới thiệu</a></li>
               <li><a href="./sanpham.html">Sản phẩm</a></li>
-              <li><a href="./quatang.html">Quà tặng</a></li>
               <li><a href="./chinhsach.html">Chính sách <i class="fas fa-sharp fa-solid fa-caret-down"></i></a>
                 <ul class="subnav">
                   <li><a href="./vanchuyen.html">Vận chuyển</a></li>
@@ -34,7 +33,7 @@
               <li><a href="./lienhe.html">Liên hệ</a></li>
           </ul>
             <div class="header-action">
-              <li><a href="./giohang.html"><i class="fas fa-shopping-cart"></i></a></li>
+              <li><a href="./giohang.html"><i class="fas fa-shopping-cart"></i><span id="show-sum-item"></span></a></li>
               <li><a href="./dangky.html">Đăng ký</a></li>
               <li><a href="./dangnhap.html">Đăng nhập</a></li>
           </div>
@@ -63,19 +62,27 @@
             </thead>
             <tbody>
               <tr>
-                <td colspan="6">Không có sản phẩm nào được thêm vào</td>
+                <td colspan="6"><span>Không có sản phẩm nào được thêm vào! Mời bạn tiếp tục chọn lựa</span></td>
               </tr>
             </tbody>
             <tfoot>
+              <tr><td colspan="6" align="right">Tổng thành tiền (A) = <span id="bill_pre_tax_total"></span></td></tr>
+            <tr><td colspan="6" align="right">Chiết Khấu (B) = <span  id="bill_discount"></span> </td></tr>
+            <tr><td colspan="6" align="right">Thuế (C) = 10% x (A - B) = <span id="bill_tax"></span> </td></tr>
+            <tr><td colspan="6" align="right">Tổng đơn hàng = A - B + C = <span id="bill_total"></span> </td></tr>
               <tr>
-                <td colspan="6">
-                  <button type="submit">Đặt hàng</button>
+                <td colspan="2">
+                  <a href="./sanpham.html"><button>Mua thêm</button></a>
+                </td>
+                <td colspan="4">
+                  <button formmethod="post" formaction="thanhtoan.php" formenctype="multipart/form-data" type="submit">Đặt hàng</button>
                 </td>
               </tr>
             </tfoot>
           </table>
         </div>
-        <script src="./main.js"></script>
+        <div class="contact">
+        </div>
         <div class="khoi_200px"style="height:200px"></div>
         <div id="footer">
             <div class="lop_gia_10"></div>

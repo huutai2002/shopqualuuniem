@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- <link rel="stylesheet" href="./assets/css/reponsive.css"> -->
-    
+    <script src="./giohang.js"></script>
+    <script src="./main.js"></script>
 </head>
 <body>
     <img src="./img/background/background-van-go-nho_060721795.jpg" alt="" class="background-vango">
@@ -24,7 +25,6 @@
                 <li><a href="./trangchu.html">Trang chủ</a></li>
                 <li><a href="./gioithieu.html">Giới thiệu</a></li>
                 <li><a href="./sanpham.html">Sản phẩm</a></li>
-                <li><a href="./quatang.html">Quà tặng</a></li>
                 <li><a href="./chinhsach.html">Chính sách <i class="fas fa-sharp fa-solid fa-caret-down"></i></a>
                   <ul class="subnav">
                     <li><a href="./vanchuyen.html">Vận chuyển</a></li>
@@ -36,7 +36,7 @@
                 <li><a href="./lienhe.html">Liên hệ</a></li>
             </ul>
             <div class="header-action">
-                <li><a href="./giohang.html"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="./giohang.html"><i class="fas fa-shopping-cart"></i><span id="show-sum-item1"></span></a></li>
                 <li><a href="./dangky.html">Đăng ký</a></li>
                 <li><a href="./dangnhap.html">Đăng nhập</a></li>
             </div>
@@ -79,8 +79,8 @@
                             <br>
                             <b>Giá bán:200.000 vnđ</b>
                             <br>
-                            <b>Số lượng:</b> <input id="" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">
-                            <b><button onclick="">Đặt hàng</button></b>
+                            <b>Số lượng:</b> <input id="sp001" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">
+                            <b><button onclick="addCart('sp001')">Đặt hàng</button></b>
                         </p>
                        
                     </section>
@@ -95,8 +95,8 @@
         
                             <b>Giá bán:150,000 vnđ</b>
                             <br>
-                            <b>Số lượng:</b> <input id="" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">
-                            <b><button onclick="">Đặt hàng</button></b>
+                            <b>Số lượng:</b> <input id="sp002" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">
+                            <b><button onclick="addCart('sp002')">Đặt hàng</button></b>
                         </p>
                     </section>
                     <section class="product-item">
@@ -109,8 +109,8 @@
                             <br>
                             <b>Giá bán:790,000 vnđ</b>
                             <br>
-                            <b>Số lượng:</b> <input id="" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">
-                            <b><button onclick="">Đặt hàng</button></b>
+                            <b>Số lượng:</b> <input id="sp003" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">
+                            <b><button onclick="addCart('sp003')">Đặt hàng</button></b>
                         </p>
                         
                     </section>
@@ -126,8 +126,8 @@
         
                             <b>Giá bán:200.000 vnđ</b> 
                             <br>
-                            <b>Số lượng:</b> <input id="" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">
-                            <b><button onclick="">Đặt hàng</button></b>
+                            <b>Số lượng:</b> <input id="sp006" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">
+                            <b><button onclick="addCart('sp006')">Đặt hàng</button></b>
                         </p>
                        
                     </section>
@@ -143,8 +143,8 @@
                            
                             <b>Giá bán:330,000 vnđ</b> 
                             <br>
-                            <b>Số lượng:</b> <input id="" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">
-                            <b><button onclick="">Đặt hàng</button></b>
+                            <b>Số lượng:</b> <input id="sp007" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">
+                            <b><button onclick="addCart('sp007')">Đặt hàng</button></b>
                         </p>
                     </section>
                     <section class="product-item">
@@ -158,8 +158,8 @@
                             
                             <b>Giá bán:220,000 vnđ</b>
                             <br>
-                            <b>Số lượng:</b> <input id="" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">
-                            <b><button onclick="">Đặt hàng</button></b>
+                            <b>Số lượng:</b> <input id="sp008" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">
+                            <b><button onclick="addCart('sp008')">Đặt hàng</button></b>
                         </p>
                     </section>
                 </section>
@@ -178,8 +178,8 @@
                                
                             <b>Giá bán:230,000 vnđ</b> 
                             <br>
-                            <b>Số lượng:</b> <input id="" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">
-                            <b><button onclick="">Đặt hàng</button></b>
+                            <b>Số lượng:</b> <input id="sp024" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">
+                            <b><button onclick="addCart('sp024')">Đặt hàng</button></b>
                         </p>
                     </section>
                     <section class="product-item">
@@ -192,8 +192,8 @@
                                
                             <b>Giá bán:330,000 vnđ</b> 
                             <br>
-                            <b>Số lượng:</b> <input id="" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">
-                            <b><button onclick="">Đặt hàng</button></b>
+                            <b>Số lượng:</b> <input id="sp025" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">
+                            <b><button onclick="addCart('sp025')">Đặt hàng</button></b>
         
                         </p>
                     </section>
@@ -208,8 +208,8 @@
                             <br>
                             <b>Giá bán:190,000 vnđ</b>
                             <br>
-                            <b>Số lượng:</b> <input id="" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">  
-                            <b><button onclick="">Đặt hàng</button></b>   
+                            <b>Số lượng:</b> <input id="sp020" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">  
+                            <b><button onclick="addCart('sp020')">Đặt hàng</button></b>   
                         
                         </p>
                     </section>
@@ -227,8 +227,8 @@
                         
                             <b>Giá bán:500,000 vnđ</b> 
                             <br>
-                            <b>Số lượng:</b> <input id="" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">  
-                            <b><button onclick="">Đặt hàng</button></b>
+                            <b>Số lượng:</b> <input id="sp021" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">  
+                            <b><button onclick="addCart('sp021')">Đặt hàng</button></b>
                         </p>           
                     </section>
                     <section class="product-item">
@@ -242,8 +242,8 @@
                          <br>       
                         <b>Giá bán:150,000 vnđ </b>
                         <br>
-                        <b>Số lượng:</b> <input id="" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">
-                        <b><button onclick="">Đặt hàng</button></b>
+                        <b>Số lượng:</b> <input id="sp017" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">
+                        <b><button onclick="addCart('sp017')">Đặt hàng</button></b>
                         </p>
                     </section>
                     <section class="product-item">
@@ -257,8 +257,8 @@
                             <br>
                             <b>Giá bán:500,000 vnđ</b>
                             <br>
-                           <b> Số lượng:</b> <input id="" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">
-                           <b><button onclick="">Đặt hàng</button></b>
+                           <b> Số lượng:</b> <input id="sp018" type="number" max="100" min="0" size="3" value="0" onkeydown="return fasle">
+                           <b><button onclick="addCart('sp018')">Đặt hàng</button></b>
                         </p>
                     </section>
                 </section>
@@ -272,7 +272,9 @@
             <div class="lop_gia_34"></div>
             <p>© Bản quyền thuộc về CỬA HÀNG QUÀ LƯU NIỆM</p>
         </div>
-        <script src="./main.js"></script>
+        
     </div>
+    <script src="./main.js"></script>
+    <script src="./giohang.js"></script>
 </body>
 </html>
