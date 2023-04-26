@@ -9,7 +9,7 @@ html {
     font-family: "Product-sans", Arial, sans-serif;
 }
 #main {
-    width: 1140px;
+    max-width: 1140px;
     margin: 10px auto;
     position: relative;
     border: 1px solid #ccc;
@@ -18,8 +18,8 @@ html {
 }
 body {
     position: relative;
-    /* display: grid; */
 }
+/* --------- */
 .background-vango{
     position: fixed;
     left: 50%;
@@ -35,10 +35,10 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+/* ---------Header-------- */
 #header {
   display: flex;
-  width: 1100px;
+  max-width: 1100px;
   position: relative;
   margin: 0 auto;
   height: 130px;
@@ -70,6 +70,12 @@ body {
     top: 0;
     height: 85px;
 }
+#tim{
+    max-width: 250px;
+    border-radius: 5px;
+    height: 30px;
+}
+/* -----------Navbar----------- */
 #nav {
     flex: 0 0 75%;
     max-width: 75%;
@@ -124,17 +130,11 @@ body {
   padding: 4px;
   font-size: 17px;
 }
-/* .search-cart .fa-shopping-cart{
-  color:#ed4190;
-  position: relative;
-  top: -28px;
-  left: 223px;
-} */
 /* Slider */
 #slider {
     position: relative;
     margin: 0 auto;
-    width: 1100px;
+    max-width: 1100px;
     height: 500px;
     overflow: hidden;
     border-radius: 5px;
@@ -153,9 +153,9 @@ body {
     opacity: 1;
 }
   
-/* End Slider */
+/* ----------------*/
 
-/* Nut chuyen doi */
+/* Nut chuyen doi slider */
 .prevBtn, .nextBtn {
     position: absolute;
     top: 50%;
@@ -185,7 +185,7 @@ body {
   
 /* end */
 #content {
-    width: 1100px;
+    max-width: 1100px;
     font-size: 20px;
     color:#000;
     margin: 0 auto;
@@ -218,7 +218,8 @@ body {
 
 }
 .tiltle-h1{
-    width: 1140px;
+    width: 100%;
+    position: relative;
 }
 .tiltle-h2{
     color: #774d06;
@@ -243,8 +244,6 @@ body {
 .cart > li{
     display: inline-block;
     font-size: 20px;
-
-
 }
 .cartt{
     min-height: 200px;
@@ -288,32 +287,55 @@ body {
 section{
   display: grid;
 }
-.product{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
-}
-.product-item{
-    border: 1px solid #ccc;
-    border-radius: 5px;
+/* SAN PHAM */
+.product
+{
+	display:flex;
+	flex-wrap: wrap;		
+	padding:0px;
+	margin: 0 auto;
 }
 .product button{
-    position: relative;
-    right: -20px;
-    width: 80px;
-    height: 30px;
-    background: #333333;
-    color: #ffbc47;
-    border-radius: 5px;
+  position: relative;
+  right: -20px;
+  width: 80px;
+  height: 30px;
+  background: #333333;
+  color: #ffbc47;
+  border-radius: 5px;
 }
+.product section
+{	
+	display: inline-flex;
+	flex:1;
+	flex-direction: column;
+	margin:3px;
+	border:1px solid #dbd7d9;
+	border-radius: 5px;	
+	background:linear-gradient(to bottom, #FBAB7E 0%, transparent 10%);
+}
+.product img
+{
+	display: block;
+	margin: auto;
+}
+.product h2
+{		
+	text-align: center;
+}
+input{
+	width: 150px;
+  border-radius: 5px;
+  height: 25px;
+}
+/* KHỐI GIẢ */
 .lop_gia_10{
     height: 10px;
 }
 .lop_gia_34{
     height: 34px;
 }
-/* go top */
+/* BACK TO TOP */
 .back_to_top{
   position: fixed;
   bottom: 40px;
@@ -329,9 +351,9 @@ section{
   height: 40px;
   transition: height 5s width 5s ease-out;
 }
-/* GIOI THIEU */
+/* -----------GIOI THIEU -LIEN HE----------*/
 #contact {
-    width: 1140px;
+    max-width: 1140px;
     padding: 15px 20px;
 }
 
@@ -356,8 +378,7 @@ form{
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    height: 260px;
-    padding: 20px;
+    height: 300px;
     line-height: 20px;
     border-top: 1px solid #333;
     }
@@ -371,19 +392,29 @@ form{
       grid-template-rows: 1fr;
       grid-column-gap: 0px;
       grid-row-gap: 0px;;
+      padding: 15px 20px;
       }
       
-      .left1-content { grid-area: 1 / 1 / 2 / 2; margin: 0 auto;}
+      .left1-content { grid-area: 1 / 1 / 2 / 2; }
       .right1-content { grid-area: 1 / 2 / 2 / 5; }
-.table-contact{
+.table{
   width: 100%;
   margin: auto;
-  text-decoration: none;
 }
 .top_icon{
   position: fixed;
   right: 0;
   bottom: 0;
+}
+.su-footer{
+  background-color: black;
+}
+.u-footer{
+  color: #ffbc47;
+  padding: auto;
+}
+.uu-footer{
+  color: #ffbc47;
 }
 .title-content{
   color: red;
@@ -407,4 +438,4 @@ u{
   border: #333;
   border-radius: 4px;
 }
-/* LIEN HE */
+/*----------------------*/

@@ -69,7 +69,7 @@
 
                     <div>Website: <a href="trangchu.html">www.cuahangqualuuniem.com</a></div> 
                 </div>
-                <form class="table-contact" method="post">
+                <form class="table" method="post" enctype="application/x-www-form-urlencoded" onsubmit="frmValidateContact(this)" >
                     <table>
                         <tbody>
                                 <tr>
@@ -77,22 +77,17 @@
                                         <label for="">Họ tên
                                             <span class="required">*</span>
                                         </label>
-                                        <input type="text" id="contactName" class="validate[required]" value="">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <label for="">Điện thoại
-                                            <span class="required">*</span>
-                                        </label>
-                                        <input type="text" id="contactPhone" class="validate[required]" value="">
+                                            <input type="name" name="name" id="name" placeholder="Vui lòng nhập Họ tên của bạn " />
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
                                         <label for="">Email(Không bắt buộc)
                                         </label>
-                                        <input type="text" id="contactEmail" class="validate[required]" value="">
+                                        <div class="input">
+                                            <input type="email" name="email" id="email" placeholder="Vui lòng nhập địa chỉ Email " />
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -100,7 +95,7 @@
                                         <label for="">Tin nhắn của bạn
                                             <span class="required">*</span>
                                         </label>
-                                        <input type="text" id="contactMessage" class="validate[required]" value="">
+                                        <input name="feedback " id="feedback" cols="60 " rows="10 " placeholder="Nội dung cần liên hệ. ">
                                     </td>
                                 </tr>
                                 <tr>
