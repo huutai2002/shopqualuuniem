@@ -65,6 +65,22 @@ function checkdn() {
       window.open("./dangnhap.html");
   }
 
+}
+/*Liên hệ*/
+function frmValidateContact(frm) {
+  if (frm.name.value.length < 4) {
+      alert("Tên không hợp lệ !")
+      return false
+  }
+  let emailReg = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+  if (!emailReg.test(frm.email.value)) {
+      alert("Email không hợp lệ !")
+      return false
+  }
+  if (frm.feedback.value.length < 10) {
+      alert("Nội dung quá ngắn !")
+      return false;
+  }
+  alert("Gửi thành công")
+  return true;
 } 
-
-
