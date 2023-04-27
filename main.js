@@ -1,9 +1,9 @@
 //-------------- SLIDER-----------------
 let sliderIndex = 0;
-const slides = document.getElementsByClassName("slide")
-const slideCount = slides.length;
-const prevBtn = document.querySelector(".prevBtn");
-const nextBtn = document.querySelector(".nextBtn");
+var slides = document.getElementsByClassName("slide");
+var slideCount = slides.length;
+var prevBtn = document.querySelector(".prevBtn");
+var nextBtn = document.querySelector(".nextBtn");
 
 function showSlide(n) {
   if (n < 0) {
@@ -159,38 +159,7 @@ function checkdn() {
 }
 //--------------END DANG KY-DANG NHAP----------------//
 
-// ------------SLIDER CHINH SACH------------------//
-//khai báo biến slideIndex đại diện cho slide hiện tại
-var slideIndex;
-// KHai bào hàm hiển thị slide
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
 
-    slides[slideIndex].style.display = "block";  
-    dots[slideIndex].className += " active";
-    //chuyển đến slide tiếp theo
-    slideIndex++;
-    //nếu đang ở slide cuối cùng thì chuyển về slide đầu
-    if (slideIndex > slides.length - 1) {
-      slideIndex = 0
-    }    
-    //tự động chuyển đổi slide sau 5s
-    setTimeout(showSlides, 5000);
-}
-//mặc định hiển thị slide đầu tiên 
-showSlides(slideIndex = 0);
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
 // ------------------------------------------
 // Reponsive 
 function showmenu(){

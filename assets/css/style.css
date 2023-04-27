@@ -68,6 +68,7 @@ body {
 }
 .mobile-menu{
   padding: 0 30px;
+  display: none;
 }
 .mobile-menu:hover,
 #header .header-action li:hover {
@@ -145,8 +146,9 @@ body {
     margin: 0 auto;
     width: 1100px;
     max-width: 100%;
-    height: 500px;
-    max-height: 100%;
+    padding-top:45%;
+    /* height: 500px;
+    max-height: 100%; */
     overflow: hidden;
     border-radius: 5px;
   }
@@ -392,7 +394,8 @@ form{
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    height: 300px;
+    max-height: 300px;
+    padding-top: inherit;
     line-height: 20px;
     border-top: 1px solid #333;
     }
@@ -443,6 +446,8 @@ u{
   background-color: #333;
   color: #ffbc47;
   border: #333;
+  width: 20%;
+  height: 30px;
   border-radius: 4px;
 }
 .box{

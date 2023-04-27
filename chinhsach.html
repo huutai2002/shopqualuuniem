@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="./assets/css/gird.css">
     <link rel="stylesheet" href="./assets/css/chinhsach.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="./giohang.js"></script>
-    <script src="./main.js"></script>
 </head>
 <body>
   <img src="./img/background/background-van-go-nho_060721795.jpg" alt="" class="background-vango">
@@ -150,22 +148,7 @@
             </p>
           </div>
         </div>
-      </div>
     </main>
-    <footer class="footer_">
-      <span>
-        <a class="social" href="https://fb.com" target="_blank">
-          <i class="fab fa-facebook-f"></i>
-      </a>
-      <a class="social" href="https://twitter.com" target="_blank">
-          <i class="fab fa-twitter"></i>
-      </a>
-      <a class="social" href="https://pinterest.com" target="_blank">
-          <i class="fab fa-pinterest"></i>
-      </a>
-      <a href="#top"> Về đầu trang</a>
-      </span>
-    </footer>
       <div id="footer">
         <div class="lop_gia_10"></div>
         <p>CỬA HÀNG QUÀ LƯU NIỆM ONLINE</p>
@@ -174,7 +157,39 @@
         <p>© Bản quyền thuộc về CỬA HÀNG QUÀ LƯU NIỆM</p>
     </div>
     </div>
-    <script src="./chinhsach.js"></script>
-    <script src="./main.js"></script>
+    <a href="#" class="back_to_top"><img src="./img/top.png" alt=""></a>
+    <script>
+      //khai báo biến slideIndex đại diện cho slide hiện tại
+var slideIndex;
+// KHai bào hàm hiển thị slide
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    slides[slideIndex].style.display = "block";  
+    dots[slideIndex].className += " active";
+    //chuyển đến slide tiếp theo
+    slideIndex++;
+    //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+    if (slideIndex > slides.length - 1) {
+      slideIndex = 0
+    }    
+    //tự động chuyển đổi slide sau 5s
+    setTimeout(showSlides, 5000);
+}
+//mặc định hiển thị slide đầu tiên 
+showSlides(slideIndex = 0);
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+    </script>
 </body>
 </html>
