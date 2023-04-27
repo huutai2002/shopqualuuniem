@@ -13,13 +13,14 @@
         overflow: hidden;
     }
     #main{
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 8px;
+        padding-right: 8px;
     }
     #menu-mobile{
         display: block;
     }
-}
-@media min-width: {
-    
+    .contact,.header,.container,.footerr,.contents{
+        display: flex;
+        flex-direction: column;
+    }
 }
