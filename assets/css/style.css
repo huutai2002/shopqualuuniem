@@ -42,7 +42,9 @@ body {
   position: relative;
   margin: 0 auto;
   height: 130px;
+  z-index: 1;
 }
+.mobile-menu,
 #header .header-action{
   flex: 0 0 25%;
   max-width: 25%;
@@ -51,19 +53,26 @@ body {
   right: 3px;
   bottom: 10px;
 }
+.mobile-menu,
 #header .header-action li {
     display: inline-block;
     background-color: #FFBC47;
     border-radius: 5px;
 }
+.mobile-menu,
 .header-action li a{
     color:#000;
     text-decoration: none;
     line-height: 40px;
     padding:0 10px;
 }
+.mobile-menu{
+  padding: 0 30px;
+}
+.mobile-menu:hover,
 #header .header-action li:hover {
     background-color: darkgray;
+    cursor: pointer;
 }
 .logo img {
     position: absolute;
@@ -78,7 +87,7 @@ body {
 /* -----------Navbar----------- */
 #nav {
     flex: 0 0 75%;
-    max-width: 75%;
+    max-width: 100%;
     text-align: center;
     position: absolute;
     bottom: 10px;
@@ -134,8 +143,10 @@ body {
 #slider {
     position: relative;
     margin: 0 auto;
-    max-width: 1100px;
+    width: 1100px;
+    max-width: 100%;
     height: 500px;
+    max-height: 100%;
     overflow: hidden;
     border-radius: 5px;
   }
@@ -185,7 +196,8 @@ body {
   
 /* end */
 #content {
-    max-width: 1100px;
+    width: 1100px;
+    max-width: 100%;
     font-size: 20px;
     color:#000;
     margin: 0 auto;

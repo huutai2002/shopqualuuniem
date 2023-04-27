@@ -1,4 +1,4 @@
-//-------------- SLIDER-----------------//
+//-------------- SLIDER-----------------
 let sliderIndex = 0;
 const slides = document.getElementsByClassName("slide")
 const slideCount = slides.length;
@@ -192,3 +192,14 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 // ------------------------------------------
+// Reponsive 
+function showmenu(){
+  var header=document.getElementById("header");
+  if (header.style.overflow==="hidden"){
+    header.style.overflow="inherit"
+  }
+  else {
+    header.style.overflow="hidden";
+  }
+}
+showmenu();
