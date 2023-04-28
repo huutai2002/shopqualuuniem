@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
     <title>Chính sách</title>
-    <link rel="stylesheet" href="./assets/css/gird.css">
     <link rel="stylesheet" href="./assets/css/chinhsach.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/reponsive.css">
@@ -23,7 +22,7 @@
             <li><a href="./trangchu.html">Trang chủ</a></li>
             <li><a href="./gioithieu.html">Giới thiệu</a></li>
             <li><a href="./sanpham.html">Sản phẩm</a></li>
-            <li><a href="./chinhsach.html">Chính sách <i class="fas fa-sharp fa-solid fa-caret-down"></i></a>
+            <li><a href="./chinhsach.html">Chính sách <i class="fas fa-sharp fa-solid fa-caret-down"></i></a></li>
               <ul class="subnav">
                 <li><a href="./vanchuyen.html">Vận chuyển</a></li>
                 <li><a href="./thanhtoan.html">Thanh toán</a></li>
@@ -34,7 +33,7 @@
             <li><a href="./lienhe.html">Liên hệ</a></li>
         </ul>
         <div class="header-action">
-          <li><a href="./giohang.html"><i class="fas fa-shopping-cart"></i><span id="show-sum-item"></span></a></li>
+          <li class="gioh"><a href="./giohang.html"><i class="fas fa-shopping-cart"></i><span id="show-sum-item"></span></a></li>
           <li><a href="./dangky.html">Đăng ký</a></li>
           <li><a href="./dangnhap.html">Đăng nhập</a></li>
       </div>
@@ -136,38 +135,8 @@
         <p>© Bản quyền thuộc về CỬA HÀNG QUÀ LƯU NIỆM</p>
     </div>
     </div>
-    <script>
-      //khai báo biến slideIndex đại diện cho slide hiện tại
-var slideIndex;
-// KHai bào hàm hiển thị slide
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-
-    slides[slideIndex].style.display = "block";  
-    dots[slideIndex].className += " active";
-    //chuyển đến slide tiếp theo
-    slideIndex++;
-    //nếu đang ở slide cuối cùng thì chuyển về slide đầu
-    if (slideIndex > slides.length - 1) {
-      slideIndex = 0
-    }    
-    //tự động chuyển đổi slide sau 5s
-    setTimeout(showSlides, 5000);
-}
-//mặc định hiển thị slide đầu tiên 
-showSlides(slideIndex = 0);
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-    </script>
+    <a href="#" class="back_to_top"><img src="./img/top.png" alt=""></a>
+    <script src="./js/chinhsach.js"></script>
+    <script src="./js/sum-item.js"></script>
 </body>
 </html>

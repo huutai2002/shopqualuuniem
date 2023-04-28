@@ -51,6 +51,7 @@ function addCart(code){
             window.localStorage.setItem(code,current+number);
         }
         alert("Đã cập nhật sản phẩm "+name+" với số lượng là "+number+" vào giỏ hàng. Số lượng sản phẩm "+name+" đã đặt là "+parseInt(window.localStorage.getItem(code))+".");
+        location.reload();
 }
 
 function getDiscountRate(){
@@ -72,7 +73,6 @@ function showCart(){
     var taxRate=0.1;
     var discount=0;
     var tax=0;
-    var tongso=0;
     for(var i=0;i<window.localStorage.length;i++){
         if(typeof itemList[localStorage.key(i)] === "undefined") continue; 
         var tr=document.createElement("tr");
@@ -86,7 +86,6 @@ function showCart(){
         var removeLink=document.createElement("a");
         var item=itemList[localStorage.key(i)];
         var number=localStorage.getItem(localStorage.key(i));
-        tongso+=parseInt(number);
         stt.style.textAlign="center";
         stt.innerHTML=(i+1);
         photoCell.style.textAlign="center";
@@ -122,7 +121,6 @@ function showCart(){
     document.getElementById("bill_discount").innerHTML=discountRate+" x A = "+formatter.format(discount); 
     document.getElementById("bill_tax").innerHTML=formatter.format(tax); 
     document.getElementById("bill_total").innerHTML=formatter.format(totalPreTax-discount+tax);
-    document.getElementById("show-sum-item").innerHTML=tongso;
 }
 
 function removeCart(code){
