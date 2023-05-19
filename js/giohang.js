@@ -95,6 +95,7 @@ function showCart(){
         priceCell.style.textAlign="center";
         numberCell.innerHTML=number;
         numberCell.setAttribute("contenteditable","");
+        numberCell.setAttribute("class","sluong");
         numberCell.style.textAlign="center";
         sum=number*item.price; 
         sumCell.innerHTML=formatter.format(sum);
